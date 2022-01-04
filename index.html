@@ -1,28 +1,47 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
         <title>
             Hola mundo
         </title>
         <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+        <link href="./css/styles.css" rel="stylesheet"/>
+        
     </head>
     <body>
-        <h1>
-            Título principal   
-        </h1>
-        <h2>
-            Subtítulo
-        </h2>
-        <h6>
-            Subtítulo muy pequeño
-        </h6>
+        <nav>
+            <ul>
+                <li class="navegacion especial">
+                    Home
+                </li>
+                <li class="navegacion">
+                    About
+                </li>
+            </ul>
+        </nav>
+        
+        
+        <section>
+            <h1 id="principal" class="titulo">
+                Título principal   
+            </h1>
+            <h2>
+                Subtítulo
+            </h2>
+            <h6>
+                Subtítulo muy pequeño
+            </h6>
+        </section>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-        <ol>
+        <ol class="numeros">
             <li>
                 Primero
             </li>
@@ -32,6 +51,13 @@
             <li>
                 Tercero
             </li>
+            <div>
+                <ul>
+                    <li>
+                        extra
+                    </li>
+                </ul>
+            </div>
         </ol>
         <ul>
             <li>
@@ -44,86 +70,92 @@
                 Tercero
             </li>
         </ul>
-        <form>
-            <div>
-                <label for="nombreUsuario">
-                    Nombre:
-                </label> 
-                <input type="text" name="nombreUsuario" id="nombreUsuario"/>
-            </div>
-            <div>
-                <label for="apellidoUsuario">
-                    Apellido:   
-                </label>
-                <input type="text" name="apellidoUsuario" id="apellidoUsuario"/>
-            </div>
-            <div>
-                <label for="passwordUsuario">
-                   Contraseña: 
-                </label>
-                <input type="password" name="passwordUsuario" id="passwordUsuario"/>
-            </div>
-            <div>
-                <label for="peliculaMatrix">
-                    Matrix:
-                </label>
-                <input type="radio" name="peliculas" id="peliculaMatrix" />
-                <label for="peliculaSpiderman">
-                    Spiderman:
-                </label>
-                <input type="radio" name="peliculas" id="peliculaSpiderman" />
-                <label for="peliculaThor">
-                    Thor:
-                </label>
-                <input type="radio" name="peliculas" id="peliculaThor" />
-            </div>
-            <div>
-                <label for="tomate">
-                    Tomate:
-                </label>
-                <input type="checkbox" name="verduras" id="tomate" />
-                <label for="lechuga">
-                    Lechuga:
-                </label>
-                <input type="checkbox" name="verduras" id="lechuga" />
-                <label for="ejote">
-                    Ejote:
-                </label>
-                <input type="checkbox" name="verduras" id="ejote" />
-            </div>
-            <div>
-                <label for="pais">
-                    Pais:
-                </label>
-                <select id="pais" name="pais">
-                    <option value="peru">
-                        Perú
-                    </option>
-                    <option value="mexico">
-                        México
-                    </option>
-                    <option value="ecuador">
-                        Ecuador
-                    </option>
-                </select> 
-            </div>
-            <div>
-                <label for="comentario">
-                    Deja tu comentario:
-                </label>
-                <textarea id="comentario" name="comentario"></textarea>  
-            </div>
-            <button type="submit">
-                Enviar
-            </button>
-        </form>
-        <img src="./imagenes/carroRojo.jpeg" />
+        <main>
+            <form>
+                <div>
+                    <label for="nombreUsuario">
+                        Nombre:
+                    </label> 
+                    <input type="text" name="nombreUsuario" id="nombreUsuario"/>
+                </div>
+                <div>
+                    <label for="apellidoUsuario">
+                        Apellido:   
+                    </label>
+                    <input type="text" name="apellidoUsuario" id="apellidoUsuario"/>
+                </div>
+                <div>
+                    <label for="passwordUsuario">
+                    Contraseña: 
+                    </label>
+                    <input type="password" name="passwordUsuario" id="passwordUsuario"/>
+                </div>
+                <div>
+                    <label for="peliculaMatrix">
+                        Matrix:
+                    </label>
+                    <input type="radio" name="peliculas" id="peliculaMatrix" />
+                    <label for="peliculaSpiderman">
+                        Spiderman:
+                    </label>
+                    <input type="radio" name="peliculas" id="peliculaSpiderman" />
+                    <label for="peliculaThor">
+                        Thor:
+                    </label>
+                    <input type="radio" name="peliculas" id="peliculaThor" />
+                </div>
+                <div>
+                    <label for="tomate">
+                        Tomate:
+                    </label>
+                    <input type="checkbox" name="verduras" id="tomate" />
+                    <label for="lechuga">
+                        Lechuga:
+                    </label>
+                    <input type="checkbox" name="verduras" id="lechuga" />
+                    <label for="ejote">
+                        Ejote:
+                    </label>
+                    <input type="checkbox" name="verduras" id="ejote" />
+                </div>
+                <div>
+                    <label for="pais">
+                        Pais:
+                    </label>
+                    <select id="pais" name="pais">
+                        <option value="peru">
+                            Perú
+                        </option>
+                        <option value="mexico">
+                            México
+                        </option>
+                        <option value="ecuador">
+                            Ecuador
+                        </option>
+                    </select> 
+                </div>
+                <div>
+                    <label for="comentario">
+                        Deja tu comentario:
+                    </label>
+                    <textarea id="comentario" name="comentario"></textarea>  
+                </div>
+                <button type="submit" class="botonSubmit">
+                    Enviar
+                </button>
+            </form>
+        </main>
+        
+        <img src="./imagenes/carroRojo.jpeg" alt="Imagen de un carro rojo"/>
         <a href="https://www.google.com"> 
             Google 
         </a>
         <a href="./about.html">
             Ir about
         </a>
+        <footer>
+            Todos los derechos reservados
+        </footer>
     </body>
 </html>
 
